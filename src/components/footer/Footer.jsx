@@ -198,11 +198,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="flex justify-start w-full md:w-auto md:justify-center md:flex-col">
 
             <h1 className="text-3xl hidden md:block font-bold mb-6">КОНТАКТЫ</h1>
 
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col">
               <div className="flex items-center">
 
                 <div className="flex items-center gap-2">
