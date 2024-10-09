@@ -34,29 +34,25 @@ const CartProduct = () => {
             return (
               <div
                 key={item.id}
-                className="flex gap-10 border-b border-gray-500 items-start"
+                className="flex gap-10 flex-col pb-10 md:pb-0 sm:flex-row border-b border-gray-500 items-start"
               >
-                <div className="w-[30%]">
+                <div className="w-[50%] mx-auto md:mx-0 md:w-[30%]">
                   <img src={item.image} alt={item.title} />
                 </div>
                 <div className="w-full">
                   <div className="flex items-center justify-between">
-                    <h2 className="font-bold uppercase text-[24px]">
+                    <h2 className="font-bold text-center sm:text-left mx-auto sm:mx-0 uppercase text-[16px] md:text-[24px]">
                       {item.title}
                     </h2>
-                    <strong>
-                     ${item.price}
-                    </strong>
                   </div>
                   <div className="flex items-center justify-between my-5">
                     <span className="capitalize text-[20px] font-medium">
                       {item.category}
                     </span>
 
-                    <div
-                      className="w-[40px] h-[40px] rounded-full"
-                      style={{ background: item.color }}
-                    ></div>
+                    <strong>
+                     ${item.price}
+                    </strong>
                   </div>
 
                   <div className="flex items-center my-5 justify-between">
